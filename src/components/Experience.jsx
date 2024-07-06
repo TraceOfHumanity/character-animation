@@ -4,6 +4,7 @@ import {
   Float,
   Gltf,
   PivotControls,
+  TransformControls,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useAtom } from "jotai";
@@ -11,6 +12,7 @@ import { useRef } from "react";
 import { MathUtils } from "three";
 import { skibidiAtom } from "./UI";
 import { WiggleBox } from "./WiggleBox";
+import { Skibidi } from "./Skibidi";
 export const Experience = () => {
   const kebabs = useRef();
   const [skibidi] = useAtom(skibidiAtom);
@@ -51,12 +53,15 @@ export const Experience = () => {
           <Gltf scale={0.2} src="/models/Kebab.glb" castShadow />
         </Float>
       </group>
-      <PivotControls depthTest={false}>
+      <TransformControls mode="translate" position-y={1}>
+      {/* <PivotControls depthTest={false}> */}
         {/* <Box position-y={0.5} castShadow>
           <meshStandardMaterial color="mediumpurple" />
         </Box> */}
-        <WiggleBox/>
-      </PivotControls>
+        {/* <WiggleBox/> */}
+        <Skibidi animation={skibidi ? "Dance" : "wawing"} position-y={-1} />
+      {/* </PivotControls> */}
+      </TransformControls>
       <directionalLight position={[0, 2, 5]} intensity={2.5} castShadow />
       <pointLight position={[0, 1, 2]} intensity={20.5} />
       <directionalLight position={[-1, 0, -5]} intensity={5} color={"red"} />
