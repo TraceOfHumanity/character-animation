@@ -24,12 +24,6 @@ export const UI = () => {
 
   return (
     <main className=" pointer-events-none fixed z-10 inset-0 p-10 flex justify-between flex-col">
-      <a
-        className="pointer-events-auto"
-        href="https://lessons.wawasensei.dev/courses/react-three-fiber"
-      >
-        <img className="w-20" src="/images/wawasensei-white.png" />
-      </a>
       <div className="flex items-center justify-center gap-4">
         {skibidi ? (
           <button
