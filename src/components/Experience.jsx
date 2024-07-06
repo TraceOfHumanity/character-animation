@@ -10,6 +10,7 @@ import { useAtom } from "jotai";
 import { useRef } from "react";
 import { MathUtils } from "three";
 import { skibidiAtom } from "./UI";
+import { WiggleBox } from "./WiggleBox";
 export const Experience = () => {
   const kebabs = useRef();
   const [skibidi] = useAtom(skibidiAtom);
@@ -51,9 +52,10 @@ export const Experience = () => {
         </Float>
       </group>
       <PivotControls depthTest={false}>
-        <Box position-y={0.5} castShadow>
+        {/* <Box position-y={0.5} castShadow>
           <meshStandardMaterial color="mediumpurple" />
-        </Box>
+        </Box> */}
+        <WiggleBox/>
       </PivotControls>
       <directionalLight position={[0, 2, 5]} intensity={2.5} castShadow />
       <pointLight position={[0, 1, 2]} intensity={20.5} />

@@ -1882,6 +1882,11 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
+wiggle@^0.0.15:
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/wiggle/-/wiggle-0.0.15.tgz#f145c6e7708dc9f6fc6777fe3c6b013fd4ac7f6e"
+  integrity sha512-1bHbe202BhyKrTHcAhIP675R43o/AwbSXxXUvbFwZuP1zvfxsm/0gR+05onHpDQpQyYuCgq9yjv0dPtTSgkI9g==
+
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
