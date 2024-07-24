@@ -1,6 +1,7 @@
 import {useGLTF} from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
+// @ts-ignore
 import { WiggleBone } from "wiggle";
 
 export const WiggleBox = () => {

@@ -1,5 +1,5 @@
-import { atom, useAtom } from "jotai";
-import { useRef } from "react";
+import {atom, useAtom} from "jotai";
+import {useRef} from "react";
 
 export const skibidiAtom = atom(false);
 export const wiggleAtom = atom(true);
